@@ -31,6 +31,47 @@
 
 /* General
 ==================================================*/
+div.centre {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img .centre2 {
+  display: inline-block;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:hover {
+  background-color: #F44336;
+  border-color: #F44336;
+}
+
+.pagination>li:first-child>a {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.pagination>li:last-child>a {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+a:link    { color: #F44336; }  /* unvisited links */
+a:visited { color: #F44336; }  /* visited links */
+a:hover   { color: #F44336; }  /* user hovers */
+a:active  { color: #F44336; }  /* active links */
+
+.pagination > li > a,
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    z-index: 3;
+    color: #F44336;
+}
+
 
 html,
 body {
