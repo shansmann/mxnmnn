@@ -38,6 +38,17 @@
     <![endif]-->
 </head>
 
+<script>
+function myFunction() {
+    var x = document.getElementById("test");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
 <body>
 
     <!-- Preloader -->
@@ -58,7 +69,7 @@
               <a href="index.html"><img src="img/logo_blue.png" width="190" alt="Logo"></a>
           </div>
           <!-- box-nav -->
-          <a class="box-primary-nav-trigger" href="#0">
+          <a class="box-primary-nav-trigger" href="#0" onclick="myFunction()">
               <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
           </a>
           <!-- box-primary-nav-trigger -->
@@ -97,7 +108,7 @@
     <div class="container main-container">
         <!-- image -->
         <div class="col-md-12">
-            <img src="https://abload.de/img/2017_04_064yjdb.jpg" alt="" class="img-responsive center-block" />
+            <img src="https://abload.de/img/2017_06_01htk0e.jpg" alt="" class="img-responsive center-block" />
             <div class="h-30"></div>
         </div>
         <!-- end image -->
@@ -139,7 +150,7 @@
         <!-- end image -->
         <!-- image -->
         <div class="col-md-12">
-            <img src="https://abload.de/img/2017_06_01htk0e.jpg" alt="" class="img-responsive center-block" />
+            <img src="https://abload.de/img/2017_04_064yjdb.jpg" alt="" class="img-responsive center-block" />
             <div class="h-30"></div>
         </div>
         <!-- end image -->
@@ -157,7 +168,7 @@
         <!-- end image -->
 
         <!-- Pagination -->
-        <div class="centre">
+        <div class="centre" id="test">
           <nav aria-label="...">
             <ul class="pagination">
               <li><a href="berlin17.html" aria-label="Previous"><i class="ion-ios-arrow-back"></i></a></li>
@@ -194,7 +205,7 @@
     <!-- footer -->
     <footer>
         <div class="container-fluid">
-            <p class="copyright">© Max Neumann 2017</p>
+            <p class="copyright">© Max Neumann 2018</p>
         </div>
     </footer>
     <!-- end footer -->

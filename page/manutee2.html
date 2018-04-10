@@ -38,6 +38,17 @@
     <![endif]-->
 </head>
 
+<script>
+function myFunction() {
+    var x = document.getElementById("test");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
 <body>
 
     <!-- Preloader -->
@@ -58,7 +69,7 @@
               <a href="index.html"><img src="img/logo_blue.png" width="190" alt="Logo"></a>
           </div>
           <!-- box-nav -->
-          <a class="box-primary-nav-trigger" href="#0">
+          <a class="box-primary-nav-trigger" href="#0" onclick="myFunction()">
               <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
           </a>
           <!-- box-primary-nav-trigger -->
@@ -133,13 +144,13 @@
         <!-- end image -->
 
         <!-- Pagination -->
-        <div class="centre">
+        <div class="centre" id="test">
           <nav aria-label="...">
             <ul class="pagination">
               <li><a href="manutee.html" aria-label="Previous"><i class="ion-ios-arrow-back"></i></a></li>
               <li><a href="manutee.html">1</a></li>
               <li class="active"><a href="#">2 <span class="sr-only">(current)</span></a></li>
-              <li class="disabled"><a href="#" aria-label="Next"><i class="ion-ios-arrow-forward"></i></a></li>
+              <li class="disabled"><a href="#" aria-label="Next" style="pointer-events: none;"><i class="ion-ios-arrow-forward"></i></a></li>
             </ul>
           </nav>
         </div>
@@ -167,7 +178,7 @@
     <!-- footer -->
     <footer>
         <div class="container-fluid">
-            <p class="copyright">© Max Neumann 2017</p>
+            <p class="copyright">© Max Neumann 2018</p>
         </div>
     </footer>
     <!-- end footer -->
